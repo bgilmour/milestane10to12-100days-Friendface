@@ -55,6 +55,7 @@ struct UserDetail: View {
                 DetailEntry(image: "building", detail: user.company)
                 DetailEntry(image: "envelope", detail: user.email)
                 DetailEntry(image: "calendar", detail: "\(user.age) years old")
+                DetailEntry(image: "tag", detail: user.tags.joined(separator: ", "))
             }
 
             Section(header: Text("About")) {
@@ -63,10 +64,6 @@ struct UserDetail: View {
                         .padding(.bottom)
                     Text("Since: \(formattedDate(from: user.registered))")
                 }
-            }
-
-            Section(header: Text("Tags")) {
-                Text(user.tags.joined(separator: ", "))
             }
 
             Section(header: Text("Friends")) {
