@@ -35,10 +35,7 @@ struct UserRow: View {
                 .padding(.bottom, 1)
 
             DetailEntry(image: "calendar", detail: "\(user.age) years old")
-                .font(.subheadline)
-
             DetailEntry(image: "envelope", detail: user.email)
-                .font(.subheadline)
         }
     }
 }
@@ -101,6 +98,7 @@ struct DetailEntry: View {
                 .frame(width: 30)
             Text(detail)
         }
+        .font(.subheadline)
     }
 }
 
