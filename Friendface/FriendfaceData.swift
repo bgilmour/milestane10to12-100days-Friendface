@@ -8,7 +8,7 @@
 import Foundation
 
 class FriendfaceData: ObservableObject {
-    var users: [User] = Bundle.main.decode("friendface.json")
+    @Published var users = [User]()
 }
 
 struct User: Identifiable, Codable {

@@ -18,9 +18,36 @@ struct ContentView: View {
                     UserRow(user: user)
                 }
             }
+            .onAppear(perform: loadData)
             .navigationBarTitle("Friendface")
         }
         .environmentObject(friendfaceData)
+    }
+
+    func loadData() {
+        guard let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json") else {
+            print("Invalid URL")
+            return
+        }
+
+        let request = URLRequest(url: url)
+
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let data = data {
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+
+                if let decodedResponse = try? decoder.decode([User].self, from: data) {
+                    DispatchQueue.main.async {
+                        friendfaceData.users = decodedResponse
+                    }
+                    return
+                }
+            }
+
+            print("Fetch failed: \(error?.localizedDescription ?? "Unknown error")")
+        }
+        .resume()
     }
 }
 
