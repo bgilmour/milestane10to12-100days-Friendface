@@ -12,6 +12,13 @@
 		3E20229826ADAB5A007BA37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E20229726ADAB59007BA37F /* Assets.xcassets */; };
 		3E20229B26ADAB5A007BA37F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E20229A26ADAB5A007BA37F /* Preview Assets.xcassets */; };
 		3E2022A426ADACB5007BA37F /* FriendfaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2022A326ADACB5007BA37F /* FriendfaceData.swift */; };
+		3EBDADEF26AE37D200B22E9F /* Friendface.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EBDADED26AE37D200B22E9F /* Friendface.xcdatamodeld */; };
+		3EBDADFE26AE3CB500B22E9F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBDADFD26AE3CB500B22E9F /* Persistence.swift */; };
+		3EF977A826AE99B100769DBC /* Tag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977A426AE99B100769DBC /* Tag+CoreDataClass.swift */; };
+		3EF977A926AE99B100769DBC /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977A526AE99B100769DBC /* Tag+CoreDataProperties.swift */; };
+		3EF977AD26AE9F7E00769DBC /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977AC26AE9F7E00769DBC /* FilteredList.swift */; };
+		3EF977B326AF310B00769DBC /* UserDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977B126AF310B00769DBC /* UserDetail+CoreDataClass.swift */; };
+		3EF977B426AF310B00769DBC /* UserDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977B226AF310B00769DBC /* UserDetail+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		3E20229A26ADAB5A007BA37F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E20229C26ADAB5A007BA37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E2022A326ADACB5007BA37F /* FriendfaceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendfaceData.swift; sourceTree = "<group>"; };
+		3EBDADEE26AE37D200B22E9F /* Friendface.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Friendface.xcdatamodel; sourceTree = "<group>"; };
+		3EBDADFD26AE3CB500B22E9F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3EF977A426AE99B100769DBC /* Tag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3EF977A526AE99B100769DBC /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3EF977AC26AE9F7E00769DBC /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilteredList.swift; path = DataModel/FilteredList.swift; sourceTree = "<group>"; };
+		3EF977B126AF310B00769DBC /* UserDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDetail+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		3EF977B226AF310B00769DBC /* UserDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDetail+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +68,13 @@
 		3E20229226ADAB55007BA37F /* Friendface */ = {
 			isa = PBXGroup;
 			children = (
+				3EBDADFA26AE3C0500B22E9F /* DataModel */,
 				3E20229326ADAB55007BA37F /* FriendfaceApp.swift */,
 				3E20229526ADAB55007BA37F /* ContentView.swift */,
+				3EF977AC26AE9F7E00769DBC /* FilteredList.swift */,
 				3E2022A326ADACB5007BA37F /* FriendfaceData.swift */,
 				3E20229726ADAB59007BA37F /* Assets.xcassets */,
+				3EBDADED26AE37D200B22E9F /* Friendface.xcdatamodeld */,
 				3E20229C26ADAB5A007BA37F /* Info.plist */,
 				3E20229926ADAB5A007BA37F /* Preview Content */,
 			);
@@ -70,6 +87,18 @@
 				3E20229A26ADAB5A007BA37F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3EBDADFA26AE3C0500B22E9F /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3EF977B126AF310B00769DBC /* UserDetail+CoreDataClass.swift */,
+				3EF977B226AF310B00769DBC /* UserDetail+CoreDataProperties.swift */,
+				3EF977A426AE99B100769DBC /* Tag+CoreDataClass.swift */,
+				3EF977A526AE99B100769DBC /* Tag+CoreDataProperties.swift */,
+				3EBDADFD26AE3CB500B22E9F /* Persistence.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +170,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBDADFE26AE3CB500B22E9F /* Persistence.swift in Sources */,
+				3EF977B426AF310B00769DBC /* UserDetail+CoreDataProperties.swift in Sources */,
 				3E20229626ADAB55007BA37F /* ContentView.swift in Sources */,
+				3EF977AD26AE9F7E00769DBC /* FilteredList.swift in Sources */,
+				3EF977A826AE99B100769DBC /* Tag+CoreDataClass.swift in Sources */,
 				3E20229426ADAB55007BA37F /* FriendfaceApp.swift in Sources */,
+				3EBDADEF26AE37D200B22E9F /* Friendface.xcdatamodeld in Sources */,
 				3E2022A426ADACB5007BA37F /* FriendfaceData.swift in Sources */,
+				3EF977A926AE99B100769DBC /* Tag+CoreDataProperties.swift in Sources */,
+				3EF977B326AF310B00769DBC /* UserDetail+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +368,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3EBDADED26AE37D200B22E9F /* Friendface.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3EBDADEE26AE37D200B22E9F /* Friendface.xcdatamodel */,
+			);
+			currentVersion = 3EBDADEE26AE37D200B22E9F /* Friendface.xcdatamodel */;
+			path = Friendface.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3E20228826ADAB55007BA37F /* Project object */;
 }
