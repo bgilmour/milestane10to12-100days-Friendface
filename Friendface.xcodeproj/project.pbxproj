@@ -17,8 +17,8 @@
 		3EF977A826AE99B100769DBC /* Tag+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977A426AE99B100769DBC /* Tag+CoreDataClass.swift */; };
 		3EF977A926AE99B100769DBC /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977A526AE99B100769DBC /* Tag+CoreDataProperties.swift */; };
 		3EF977AD26AE9F7E00769DBC /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977AC26AE9F7E00769DBC /* FilteredList.swift */; };
-		3EF977B326AF310B00769DBC /* UserDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977B126AF310B00769DBC /* UserDetail+CoreDataClass.swift */; };
-		3EF977B426AF310B00769DBC /* UserDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977B226AF310B00769DBC /* UserDetail+CoreDataProperties.swift */; };
+		3EF977BD26AF679500769DBC /* UserDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977BB26AF679400769DBC /* UserDetail+CoreDataClass.swift */; };
+		3EF977BE26AF679500769DBC /* UserDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF977BC26AF679500769DBC /* UserDetail+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		3EF977A426AE99B100769DBC /* Tag+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3EF977A526AE99B100769DBC /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3EF977AC26AE9F7E00769DBC /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilteredList.swift; path = DataModel/FilteredList.swift; sourceTree = "<group>"; };
-		3EF977B126AF310B00769DBC /* UserDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDetail+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		3EF977B226AF310B00769DBC /* UserDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDetail+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		3EF977BB26AF679400769DBC /* UserDetail+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDetail+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3EF977BC26AF679500769DBC /* UserDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDetail+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +92,10 @@
 		3EBDADFA26AE3C0500B22E9F /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				3EF977B126AF310B00769DBC /* UserDetail+CoreDataClass.swift */,
-				3EF977B226AF310B00769DBC /* UserDetail+CoreDataProperties.swift */,
 				3EF977A426AE99B100769DBC /* Tag+CoreDataClass.swift */,
 				3EF977A526AE99B100769DBC /* Tag+CoreDataProperties.swift */,
+				3EF977BB26AF679400769DBC /* UserDetail+CoreDataClass.swift */,
+				3EF977BC26AF679500769DBC /* UserDetail+CoreDataProperties.swift */,
 				3EBDADFD26AE3CB500B22E9F /* Persistence.swift */,
 			);
 			path = DataModel;
@@ -171,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EBDADFE26AE3CB500B22E9F /* Persistence.swift in Sources */,
-				3EF977B426AF310B00769DBC /* UserDetail+CoreDataProperties.swift in Sources */,
+				3EF977BE26AF679500769DBC /* UserDetail+CoreDataProperties.swift in Sources */,
 				3E20229626ADAB55007BA37F /* ContentView.swift in Sources */,
 				3EF977AD26AE9F7E00769DBC /* FilteredList.swift in Sources */,
 				3EF977A826AE99B100769DBC /* Tag+CoreDataClass.swift in Sources */,
@@ -179,7 +179,7 @@
 				3EBDADEF26AE37D200B22E9F /* Friendface.xcdatamodeld in Sources */,
 				3E2022A426ADACB5007BA37F /* FriendfaceData.swift in Sources */,
 				3EF977A926AE99B100769DBC /* Tag+CoreDataProperties.swift in Sources */,
-				3EF977B326AF310B00769DBC /* UserDetail+CoreDataClass.swift in Sources */,
+				3EF977BD26AF679500769DBC /* UserDetail+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
